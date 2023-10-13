@@ -5,6 +5,19 @@
             padding: 0;
         } 
 
+    h1
+    {
+        animation-name: animation_titulo;
+        animation-duration: 6s;
+        transition-delay: 2s;
+    }
+
+    @keyframes animation_titulo
+    {
+    from { color:#333;}
+    to {color:white;}
+    }
+
         h2{
             text-align: center;
         }

@@ -2,6 +2,8 @@
 
 /* ESTILOS DE COMPONENTES GENERALES */
 
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -144,7 +146,7 @@ DEFINICION DEL GRID DE OFERTAS*/
 .contenedorOfertas
 {
     display: grid;
-    gap:5px;
+    gap:2px;
     padding: 5px;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
@@ -157,29 +159,29 @@ DEFINICION DEL GRID DE OFERTAS*/
 
 .gridOferta1 {
 grid-area: gridOferta1;
-background-color: #b6b6b6;
+background-color: #dedede;
 
 }
 
 .gridOferta2 {
 grid-area: gridOferta2;
-background-color: #b6b6b6;
+background-color: #dedede;
 }
 .gridOferta3 {
 grid-area: gridOferta3;
-background-color: #b6b6b6;
+background-color: #dedede;
 }
 .gridOferta4 {
 grid-area: gridOferta4;
-background-color: #b6b6b6;
+background-color: #dedede;
 }
 .gridOferta5 {
 grid-area: gridOferta5;
-background-color: #b6b6b6;
+background-color: #dedede;
 }
 .gridOferta6 {
 grid-area: gridOferta6;
-background-color: #b6b6b6;
+background-color: #dedede;
 }
 .footer {
 grid-area: footer;

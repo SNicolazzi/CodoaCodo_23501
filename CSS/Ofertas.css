@@ -9,8 +9,29 @@ table
     overflow-y: auto;
 }
 
-img:hover
+/* h1
 {
-    width: 500px;
-    height: 500px;
+    animation-name: animation_titulo;
+    animation-duration: 6s;
+    transition-delay: 2s;
 }
+
+@keyframes animation_titulo
+{
+    from { color:#333}
+    to {color:white;}
+} */
+
+/* ANIMA LA CARGA DE LAS IMAGENES DE LAS COMPUTADORAS */
+
+/* img 
+{
+    animation-name: entradaImagen;
+    animation-duration: 2s;
+    transition-delay: 1s;
+}
+@keyframes entradaImagen
+{
+    from { width:10px; height: 10px; }
+    to {width:300px; height: 300px;}
+} */
