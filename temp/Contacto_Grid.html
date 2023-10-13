@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS_Contact_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+<style>
+
+/* ICONOSO DE REDES SOCIALES */
+.fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 15px;
+            text-decoration: none;
+            margin: 5px 40px;
+}
+.fa:hover {
+            opacity: 0.9;
+        }
+  
+.fa-linkedin {
+     background: #007bb5;
+            color: white;
+        }
+  
+.fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+  
+.fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+
+/* VALIDACION DE LOS INPUT */
+input:invalid:required
+{
+    background-color: rgb(241, 215, 215);
+}
+textarea
+{
+    background-color: rgb(241, 215, 215);
+}
+
+/* saca el resize del textarea y lo deja fijo */
+#mensaje 
+{
+    resize: none;
+}
+
+/* CAMBIAR EL COLOR DEL MARCO DE LOS INPUT CUANDO SE LO PINCHA */
+input:focus
+{
+    color:#212529;
+    background-color:#fff;
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+    transition: 0.2s;
+}
+
+/* CAMBIAR EL COLOR DEL MARCO DEL TEXTAREA CUANDO SE LO PINCHA */
+textarea:focus
+{
+    color:#212529;
+    background-color:#fff;
+    border-color:#86b7fe;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+    transition: 0.2s;
+}
+
+/* Grid para el contenedor principal */
+.contenedor_gral {
+    display: grid;
+    gap: 5px;
+    background-color: lightgray;
+    padding: 5px;
+    grid-template-rows: 1 2fr 2fr; 
+    grid-template-areas:
+    'header header header header'
+    'main main mapa iframe'
+    'footer footer footer footer';
+}
+
+.header {
+    grid-area: header;
+    background-color: lightgreen;
+    height: 5rem;
+}
+
+.main {
+    grid-area: main;
+    /* background-color: aqua; */
+}
+
+.panel_derecho {
+    grid-area: mapa;
+    background-color: blue;
+    align-items: center;
+ }
+
+.iframe_mapa
+{
+    grid-area: iframe;
+    background-color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    height: 5rem;  
+}
+
+/* Agregar los 3 tamaños segun Unidad 9 CSS */
+@media (max-width: 768px) {
+    .contenedor_gral {
+    grid-template-rows: 1fr 1 2fr 1fr;
+    grid-template-areas:
+    'header header header header'
+    'main  main  main  main'
+    'mapa  mapa  mapa  mapa'
+    'iframe iframe iframe iframe'
+    'footer footer footer footer'
+    ;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor_gral {
+        /* OJO, revisar el padding de los textos y campos */
+    grid-template-rows: 1fr  1 2fr 1fr;
+    grid-template-areas:
+    'header header header header'
+    'main  main  main  main'
+    'mapa  mapa  mapa  mapa'
+    'iframe iframe iframe iframe'
+    'footer footer footer footer'
+    ;
+    }
+}
+    </style>
+    <div class="contenedor_gral"> <!-- CONTENEDOR PRINCIPAL -->
+        <div class="header">Header</div>
+        <div class="main">
+            <fieldset>
+                <!-- INICIO DEL FORMULARIO -->
+                <!-- NOTAS:
+                    Controlar espacios y campos.
+                Agregar sombreado a todos los campos.
+                Cuidado con la extension de los nombres.
+                poner limitadores a los inputs
+                Bloquear el tamaño de la textarea
+                Pedirle a Andres el CCS que uso la home. Replicar estilo de letras y paleta -->
+              
+
+                <form action="link" method="post" target="_blank" id="form_contacto" align="center">
+                    <div class="formulario_Contacto"> 
+                        <div class="label_nombre">
+                            <label id="label_Nombre">Nombre:</label>
+                        </div>
+                        <div class="input_nombre">
+                            <input type="text" value="wqewqeqw" size="30" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" maxlength="30" required>
+                        </div>
+                        <br>
+                        <div class="label_email">
+                            <label for="email">Direccion de email:</label>
+                        </div>
+                        <div class="input_email">
+                            <input type="email" value="dsad@dsada" size="30" name="email" id="email" placeholder="Ingrese su direccion de mail" maxlength="30" required>
+                        </div>
+                        <br>
+                        <div class="label_tel">
+                            <label for="telefono">Telefono:</label>
+                        </div>
+                        <div class="input_tel">
+                            <input type="tel" value="dsadsa" size="30" maxlength="14" name="telefono" id="telefono" placeholder="Ingrese su numero de telefono" required>
+                        </div>
+                        <br>
+                        <div class="label_texto">
+                            <label for="Mensaje">Mensaje:</label>
+                        </div>
+                        <div class="input_mensaje">
+                            <textarea name="input_mensaje" value="sadsadsa" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" maxlength="256" required></textarea>
+                        </div>
+                        <br>
+                        <br>
+                        <input type="reset" id="reset" value="Reset"> <input type="submit" id="Enviar" name="Enviar" value="Enviar" onclick="contenido_input ()">
+                    </div> <!-- FIN CLASS FORMULARIO -->
+                </form> 
+            </fieldset>
+        </div>
+        <div class="panel_derecho" align="center">
+            <table border="2" align="center">
+                <tr>
+                    <td>
+            <div class="Datos_contacto">
+                        TELEFONOS:<br>
+                        (+54 11) 48712487341314
+                        <br>
+                        (+54 11) 48712487341314
+                        <br>
+                        <br>
+                        DIRECCION
+                        <br>
+                            L`ombelico del mondo
+                            <br>
+                            CABA
+                            <br>
+                            Argentina
+                        <br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-reddit"></a>
+                </td>
+            </tr>
+        </table>
+        </div>            
+        <div class="iframe_mapa">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273.9771701539837!2d-58.38177086351018!3d-34.60378534962747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1695398391893!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+       
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

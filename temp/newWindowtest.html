@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="inputNombre">
+    <input type="text" id="Nombre" >
+  </div>
+    <input type="text" id="Apellido">
+    <input type="submit" id="demo" onclick="myFunction()" value="Hace Click"></input>
+    <input type="Reset">
+
+    <script>
+      
+      function myFunction (){
+
+      let varNombre = new String(document.getElementById("Nombre").value); // CREO UN STRING CON LO QUE RECIBO DEL INPUT
+      let Nombre = varNombre.trim;
+
+      const ArrayNombre = new Array() //CREO EL ARRAY VACIO
+
+
+
+      for (i=0; i <= varNombre.length-1; i++) //CARGO EL ARRAY CON EL CONTENIDO DEL STRING
+      {
+        ArrayNombre.push(varNombre.charAt(i));
+        console.log(ArrayNombre);
+        
+      }
+        // console.log (varNombre);
+        // console.log (typeof("varNombre"));
+        // console.log (varNombre.length); // largo total de la cadena de caracateres
+        // console.log (varNombre.charAt(1)); // valor del string en la posicion 1
+
+        if ((document.getElementById("Nombre").value) == "")
+        {
+          alert ("Debe escribi algo")
+        }
+
+        else
+        {
+          alert ("todo OK")
+        }
+
+      // function myFunction() {
+    //let variable1 = document.getElementById("Nombre").value
+
+    let newWindow = window.open ("", "newWindows", "_self,width=200,height=100,toolbar=no,scrollbars=no,resizable=no");
+    newWindow.document.write ("<p>Esto se cargo " + varNombre, "</p>")
+    //console.log(variable1);
+    //document.write(variable1);
+      
+ }
+
+</script>
+</body>
+
+</html>
