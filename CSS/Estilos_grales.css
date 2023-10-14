@@ -1,0 +1,89 @@
+/* ESTILOS DE COMPONENTES GENERALES */
+
+/* MANU DE NAVEGACION EN EL HEADER */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f1eeee;
+    text-decoration: blink;
+    padding: 2.5px;
+}
+
+nav ul li a:hover {
+    background-color: #a31212;
+    transition: color #555 1.5s;
+    text-decoration: blink;
+} 
+
+/* ANIMANCION TITULO */
+h1
+    {
+        animation-name: animation_titulo;
+        animation-duration: 6s;
+        margin:0;
+    }
+
+    .header h2
+    {
+        animation-name: animation_titulo;
+        animation-duration: 6s;
+        margin:0;
+        text-align: left;
+    }
+
+    h2
+    {
+        text-align: center;
+    }
+
+    @keyframes animation_titulo
+    {
+    from { color:#333;}
+    to {color:white;}
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+
+/* PARAMETROS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ICONOSO DE REDES SOCIALES */
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 15px;
+    text-decoration: none;
+    margin: 5px 40px;
+}
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-linkedin {
+background: #007bb5;
+    color: white;
+}
