@@ -50,7 +50,7 @@
         display: grid;
         gap:2px;
         padding: 5px;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas: 
         'header header header'
         'gridOferta1 gridOferta2 gridOferta3'
@@ -87,14 +87,121 @@
     }
     .footer {
     grid-area: footer;
-    background-color: black;
+    background-color: #333;
     height: 5rem;  
     }
+
+    /* _____________________________________________________________________
+    
+    DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO*/
+    
+    .contenedorEquipos
+    {
+        display: grid;
+        gap:2px;
+        padding: 5px;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'gridDescripcion_equipo1 gridCarcasa1 gridCcomponentes1 gridPantalla1'
+        'gridDescripcion_equipo2 gridCarcasa2 gridCcomponentes2 gridPantalla2'
+        'footer footer footer footer'
+        ;
+    }
+    
+    .gridDescripcion_equipo1 {
+    grid-area: gridDescripcion_equipo1;
+    background-color: #953030;
+    }
+    .gridCarcasa1 {
+    grid-area: gridCarcasa1;
+    background-color: #20ad43;
+    }
+    .gridCcomponentes1 {
+    grid-area: gridCcomponentes1;
+    background-color: #dc9999;
+    }
+    .gridPantalla1 {
+    grid-area: gridPantalla1;
+    background-color: #362771;
+    }
+    .gridDescripcion_equipo2 {
+        grid-area: gridDescripcion_equipo2;
+        background-color: #953030;
+     }
+    .gridCarcasa2 {
+        grid-area: gridCarcasa2;
+        background-color: #20ad43;
+     }
+    .gridCcomponentes2 {
+        grid-area: gridCcomponentes2;
+        background-color: #dc9999;
+     }
+    .gridPantalla2 {
+        grid-area: gridPantalla2;
+        background-color: #362771;
+     }
+    
+    .footer {
+    grid-area: footer;
+    background-color: #333;
+    height: 5rem;  
+    }
+
+/* DEFINICION DEL GRID DEL INDEX */
+
+.contenedor_gral_index
+    {
+        display: grid;
+        gap: 1px;
+        padding: 2px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        'carousel carousel'
+        'texto_explicacion texto_explicacion'
+        'proceso_refurbished proceso_refurbished'
+        'banner_refurbished1 compromiso_rererere'
+        ;
+    }
+    
+    .carousel {
+    grid-area: carousel;
+    }
+    .texto_explicacion {
+    grid-area: texto_explicacion;
+    }
+    .proceso_refurbished {
+    grid-area: proceso_refurbished;
+    }
+    .banner_refurbished1 {
+    grid-area: banner_refurbished1;
+    background-color: #362771;
+ 
+    }
+    .compromiso_rererere {
+        grid-area: compromiso_rererere;
+    }
+
     /* ----------------------------------------------------------------------- */
     /* 3 tamanos de responsive segun indicado en clase (Unidad 9 CSS) */
     
-    @media (max-width: 850px) 
+    @media (max-width: 850px) {
+
+        /* PAGINA DE INDEX */
+    .contenedor_gral_index
     {
+        display: grid;
+        gap: 1px;
+        padding: 2px;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        'carousel carousel'
+        'texto_explicacion texto_explicacion'
+        'proceso_refurbished proceso_refurbished'
+        'banner_refurbished1 banner_refurbished1'
+        'compromiso_rererere compromiso_rererere'
+        ;
+    }
+
         /* PAGINA DE CONTACTOS */
     .contenedor_gral {
     grid-template-rows: 1fr 1 2fr;
@@ -121,6 +228,25 @@
     
     @media (max-width: 650px) {
     
+      /* PAGINA DE INDEX */
+      .contenedor_gral_index
+      {
+        display: grid;
+        gap: 1px;
+        padding: 2px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        'carousel carousel'
+        'texto_explicacion'
+        'banner_refurbished1 '
+        'compromiso_rererere '
+        ;
+      }
+
+      .carousel{
+        display: none;
+      }
+
     /* PAGINA DE CONTACTOS */
         .contenedor_gral {
     grid-template-rows: 1fr 1 2fr 1fr;
@@ -147,7 +273,32 @@
     }
     
     @media (max-width: 400px) {
-    /* PAGINA DE CONTACTOS */
+    
+          /* PAGINA DE INDEX */
+          .contenedor_gral_index
+          {
+            display: grid;
+            gap: 1px;
+            padding: 2px;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+            'carousel carousel'
+            'texto_explicacion'
+            'banner_refurbished1 '
+            'compromiso_rererere '
+            ;
+          }
+    
+          .carousel{
+            display: none;
+          }
+
+          .compromiso_rererere{
+            display: none;
+          }
+    
+    
+        /* PAGINA DE CONTACTOS */
     .contenedor_gral {
     grid-template-rows: 1fr  1 2fr 1fr;
     grid-template-areas:

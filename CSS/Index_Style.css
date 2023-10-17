@@ -1,20 +1,22 @@
-        .main-grid-item {
-            padding: 20px;
-            border: 2px solid #ccc;
-            background-color: #dedede;
-          }
+.main-grid-item {
+  padding: 20px;
+   border: 2px solid #ccc;
+   background-color: #dedede;
+}
 
-          .p1{
-            font-size: 10px;
-          }
-          section {
-        padding: 20px;
-        }
-        
-        section h2 {
-            color: #333;
-        }
-        
-        section p {
-            color: #b6b6b6;
-        }
+.carousel-indicators button{
+  
+  border-radius: 1px !important;
+  border-color: #b6b6b6 !important;
+}
+
+h5{
+  font-weight: bold;
+}
+
+table{
+  text-align: center;
+}
+
+
+
