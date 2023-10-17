@@ -127,18 +127,22 @@
     .gridDescripcion_equipo2 {
         grid-area: gridDescripcion_equipo2;
         background-color: #953030;
+        display: none;
      }
     .gridCarcasa2 {
         grid-area: gridCarcasa2;
         background-color: #20ad43;
+        display: none;
      }
     .gridCcomponentes2 {
         grid-area: gridCcomponentes2;
         background-color: #dc9999;
+        display: none;
      }
     .gridPantalla2 {
         grid-area: gridPantalla2;
         background-color: #362771;
+        display: none;
      }
     
     .footer {
@@ -224,6 +228,21 @@
         ;
     }
     
+
+    /* DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO */
+    
+    .contenedorEquipos
+    {
+        display: grid;
+        gap:2px;
+        padding: 5px;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'gridDescripcion_equipo1 gridCarcasa1'
+        'gridCcomponentes1 gridPantalla1'
+        'footer footer'
+        ;
+    }
     }
     
     @media (max-width: 650px) {
@@ -267,10 +286,28 @@
         'gridOferta1 gridOferta2'
         'gridOferta3 gridOferta4'
         'gridOferta5 gridOferta6'
-        'footer footer''
+        'footer footer'
         ;
     }
-    }
+
+     /* DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO */
+    
+     .contenedorEquipos
+     {
+         display: grid;
+         gap:2px;
+         padding: 5px;
+         grid-template-rows: auto auto auto auto;
+         grid-template-areas: 
+         'gridDescripcion_equipo1'
+         'gridCarcasa1'
+         'gridCcomponentes1'
+         'gridPantalla1'
+         'footer'
+         ;
+     }
+     }
+    
     
     @media (max-width: 400px) {
     
