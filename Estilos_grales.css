@@ -110,7 +110,7 @@ background: #007bb5;
  path {
     fill: #fff;
  }
-
+ /* BALOON DE WHATSAPP */
 #whatsapp a {padding: 20px 0;}
 #whatsapp a::before {
 	content: 'Te asesoramos por whatsapp';
