@@ -110,3 +110,20 @@ background: #007bb5;
  path {
     fill: #fff;
  }
+ /* BALOON DE WHATSAPP */
+#whatsapp a {padding: 20px 0;}
+#whatsapp a::before {
+	content: 'Te asesoramos por whatsapp';
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px 10px;
+	margin-right: 10px;
+	color: rgba(0, 0, 0, .8);
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+	transition: .3s ease;
+	opacity: 0;
+}
+#whatsapp:hover a::before {opacity: 1;}
