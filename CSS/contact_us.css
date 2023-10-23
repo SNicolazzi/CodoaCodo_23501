@@ -1,0 +1,44 @@
+/* VALIDACION DE LOS INPUT */
+input:invalid:required
+{
+background-color: rgb(241, 215, 215);
+}
+textarea
+{
+background-color: rgb(241, 215, 215);
+}
+
+/* saca el resize del textarea y lo deja fijo */
+#mensaje 
+{
+resize: none;
+}
+
+.Datos_contacto
+{
+text-align: center;
+}
+
+/* CAMBIAR EL COLOR DEL MARCO DE LOS INPUT CUANDO SE LO PINCHA */
+input:focus
+{
+color:#212529;
+background-color:#fff;
+border-color:#86b7fe;
+outline:0;
+box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+transition: 0.2s;
+}
+
+/* CAMBIAR EL COLOR DEL MARCO DEL TEXTAREA CUANDO SE LO PINCHA */
+textarea:focus
+{
+color:#212529;
+background-color:#fff;
+border-color:#86b7fe;
+outline:0;
+box-shadow:0 0 0 .25rem rgba(13,110,253,.25);
+transition: 0.2s;
+}
+/* ____________________________________________________________________________ */
+

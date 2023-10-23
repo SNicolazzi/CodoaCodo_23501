@@ -1,0 +1,35 @@
+.main-grid-item {
+  padding: 20px;
+   border: 2px solid #ccc;
+   background-color: #dedede;
+}
+
+.carousel-indicators button{
+  
+  border-radius: 1px !important;
+  border-color: #b6b6b6 !important;
+}
+
+h5{
+  font-weight: bold;
+}
+
+table{
+  text-align: center;
+}
+
+.f1{
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  /* color: red; */
+}
+
+.f2{
+  text-align: left;
+  font-size: 10px;
+  width: 200px;
+  border: 1px solid
+  padding: 10px;
+}
+
