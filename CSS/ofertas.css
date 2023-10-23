@@ -1,12 +1,11 @@
-table
-{
+table {
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
     overflow-x:auto;
     overflow-y: auto;
+    text-align: center;
+    width: 100%;
 }
 
 /* ANIMA LA CARGA DE LAS IMAGENES DE LAS COMPUTADORAS */

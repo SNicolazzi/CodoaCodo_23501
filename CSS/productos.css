@@ -6,7 +6,7 @@ ul{
 }
 
 .grid-item {
-    padding: 20px;
-    border: 2px solid #ccc;
     background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    padding: 20px;
   }

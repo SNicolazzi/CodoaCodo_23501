@@ -45,8 +45,7 @@
     
     DEFINICION DEL GRID DE OFERTAS*/
     
-    .contenedorOfertas
-    {
+    .contenedorOfertas {
         display: grid;
         gap:2px;
         padding: 5px;
@@ -95,8 +94,7 @@
     
     DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO*/
     
-    .contenedorEquipos
-    {
+    .contenedorEquipos {
         display: grid;
         gap:2px;
         padding: 5px;
@@ -153,8 +151,7 @@
 
 /* DEFINICION DEL GRID DEL INDEX */
 
-.contenedor_gral_index
-    {
+.contenedor_gral_index {
         display: grid;
         gap: 1px;
         padding: 2px;
@@ -191,8 +188,7 @@
     @media (max-width: 850px) {
 
         /* PAGINA DE INDEX */
-    .contenedor_gral_index
-    {
+    .contenedor_gral_index {
         display: grid;
         gap: 1px;
         padding: 2px;
@@ -231,8 +227,7 @@
 
     /* DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO */
     
-    .contenedorEquipos
-    {
+    .contenedorEquipos {
         display: grid;
         gap:2px;
         padding: 5px;
@@ -267,7 +262,7 @@
       }
 
     /* PAGINA DE CONTACTOS */
-        .contenedor_gral {
+    .contenedor_gral {
     grid-template-rows: 1fr 1 2fr 1fr;
     grid-template-areas:
     'main  main  main  main'
@@ -292,8 +287,7 @@
 
      /* DEFINICION DEL GRID DE DESCRIPCION DE EQUIPO */
     
-     .contenedorEquipos
-     {
+     .contenedorEquipos {
          display: grid;
          gap:2px;
          padding: 5px;
@@ -326,11 +320,11 @@
             ;
           }
     
-          .carousel{
+          .carousel {
             display: none;
           }
 
-          .compromiso_rererere{
+          .compromiso_rererere {
             display: none;
           }
     

@@ -3,8 +3,8 @@
 /* MANU DE NAVEGACION EN EL HEADER */
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -24,25 +24,22 @@ nav ul li a:hover {
 } 
 
 /* ANIMANCION TITULO */
-h1
-    {
-        animation-name: animation_titulo;
-        animation-duration: 6s;
-        margin:0;
-        font-size: 30px;
-        font-weight: bold;
-    }
+h1{
+    animation-duration: 6s;
+    animation-name: animation_titulo;
+    font-size: 30px;
+    font-weight: bold;
+    margin:0;
+}
 
-    .header h2
-    {
-        animation-name: animation_titulo;
-        animation-duration: 6s;
-        margin:0;
-        text-align: left;
-    }
+.header h2 {
+    animation-duration: 6s;
+    animation-name: animation_titulo;
+    margin:0;
+    text-align: left;
+}
 
-    h2
-    {
+    h2 {
         text-align: center;
     }
 
@@ -77,11 +74,11 @@ footer {
 
 /* ICONOSO DE REDES SOCIALES */
 .fa {
-    padding: 10px;
     font-size: 20px;
-    width: 15px;
-    text-decoration: none;
     margin: 5px 40px;
+    padding: 10px;
+    text-decoration: none;
+    width: 15px;
 }
 .fa:hover {
     opacity: 0.9;
@@ -111,7 +108,9 @@ background: #007bb5;
     fill: #fff;
  }
  /* BALOON DE WHATSAPP */
-#whatsapp a {padding: 20px 0;}
+#whatsapp a {
+    padding: 20px 0;
+}
 #whatsapp a::before {
 	content: 'Te asesoramos por whatsapp';
 	display: inline-block;
@@ -126,4 +125,6 @@ background: #007bb5;
 	transition: .3s ease;
 	opacity: 0;
 }
-#whatsapp:hover a::before {opacity: 1;}
+#whatsapp:hover a::before {
+    opacity: 1;
+}
