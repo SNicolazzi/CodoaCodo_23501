@@ -369,6 +369,11 @@
     ;
     
     }
+
+    form{
+        margin: 0 auto;
+        text-align: left;
+      }
     /* PAGINA DE productos */
     
     .contenedorOfertas {
@@ -418,3 +423,8 @@
         }
 
     }
+
+    form{
+        margin: 0 auto;
+        text-align: left;
+      }
