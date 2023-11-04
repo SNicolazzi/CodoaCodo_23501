@@ -361,7 +361,7 @@
     .contenedor_gral {
     grid-template-rows: 1fr  1 2fr 1fr;
     grid-template-areas:
-    'header header header header'
+    /* 'header header header header' */
     'main  main  main  main'
     'mapa  mapa  mapa  mapa'
     'iframe iframe iframe iframe'
