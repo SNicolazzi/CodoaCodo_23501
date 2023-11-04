@@ -221,6 +221,11 @@
     'footer footer footer'
     ;
     }
+
+    form{
+        margin: 0 auto;
+        text-align: center;
+      }
     /* PAGINA DE OFERTAS */
     .contenedorOfertas {
         grid-template-rows: auto auto auto auto;
@@ -284,6 +289,11 @@
     'footer footer footer footer'
     ;
     }
+
+    form{
+        margin: 0 auto;
+        text-align: left;
+      }
     
     /* PAGINA DE PRODUCTOS */
     
