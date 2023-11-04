@@ -3,7 +3,7 @@
     display: grid;
     gap: 5px;
     padding: 5px;
-    grid-template-rows: 2fr 2fr; 
+    grid-template-rows: auto auto; 
     grid-template-areas:
     'main main mapa iframe'
     'footer footer footer footer';
@@ -43,7 +43,7 @@
     }
     /* _____________________________________________________________________
     
-    DEFINICION DEL GRID DE OFERTAS*/
+    DEFINICION DEL GRID DE PRODUCTOS*/
     
     .contenedorOfertas {
         display: grid;
@@ -51,7 +51,7 @@
         padding: 5px;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
-        'header header header'
+        /* 'header header header' */
         'gridOferta1 gridOferta2 gridOferta3'
         'gridOferta4 gridOferta5 gridOferta6'
         'footer footer footer'
@@ -208,7 +208,7 @@
 
         /* PAGINA DE CONTACTOS */
     .contenedor_gral {
-    grid-template-rows: 1fr 1 2fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
     'main  main  mapa'
     'main  main  mapa'
@@ -218,9 +218,9 @@
     }
     /* PAGINA DE OFERTAS */
     .contenedorOfertas {
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
-        'header header'
+        /* 'header header' */
         'gridOferta1 gridOferta2'
         'gridOferta3 gridOferta4'
         'gridOferta5 gridOferta6'
@@ -271,7 +271,7 @@
 
     /* PAGINA DE CONTACTOS */
     .contenedor_gral {
-    grid-template-rows: 1fr 1 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     'main  main  main  main'
     'mapa  mapa  mapa  mapa'
@@ -280,12 +280,12 @@
     ;
     }
     
-    /* PAGINA DE OFERTAS */
+    /* PAGINA DE PRODUCTOS */
     
     .contenedorOfertas {
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: 
-        'header header'
+        /* 'header header' */
         'gridOferta1 gridOferta2'
         'gridOferta3 gridOferta4'
         'gridOferta5 gridOferta6'
@@ -354,12 +354,12 @@
     ;
     
     }
-    /* PAGINA DE OFERTAS */
+    /* PAGINA DE productos */
     
     .contenedorOfertas {
-        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
-        'header'
+        /* 'header' */
         'gridOferta1'
         'gridOferta2'
         'gridOferta3'
