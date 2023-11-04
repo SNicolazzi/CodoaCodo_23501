@@ -41,6 +41,11 @@
     padding: 10px;
     text-align: center; 
     }
+
+  form{
+    margin: 0 auto;
+    text-align: center;
+  }
     /* _____________________________________________________________________
     
     DEFINICION DEL GRID DE PRODUCTOS*/
