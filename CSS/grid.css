@@ -306,8 +306,7 @@
     @media (max-width: 400px) {
     
           /* PAGINA DE INDEX */
-          .contenedor_gral_index
-          {
+          .contenedor_gral_index {
             display: grid;
             gap: 1px;
             padding: 2px;
@@ -327,7 +326,14 @@
           .compromiso_rererere {
             display: none;
           }
-    
+
+          h5{
+            text-wrap:wrap;
+          }
+          
+          p{
+            text-wrap: wrap;
+          }
     
         /* PAGINA DE CONTACTOS */
     .contenedor_gral {
