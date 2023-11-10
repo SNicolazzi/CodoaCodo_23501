@@ -42,7 +42,7 @@
     text-align: center; 
     }
 
-  form{
+  .formulario_Contacto{
     margin: 0 auto;
     text-align: center;
   }
@@ -254,7 +254,7 @@
     }
     }
     
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
     
       /* PAGINA DE INDEX */
       .contenedor_gral_index
@@ -290,11 +290,15 @@
     ;
     }
 
-    form{
-        margin: 0 auto;
-        text-align: left;
-      }
-    
+    .iframe_mapa{
+      display: none;
+    } 
+
+    .formulario_Contacto{
+      text-align: center;
+    }
+
+   
     /* PAGINA DE PRODUCTOS */
     
     .contenedorOfertas {
@@ -359,20 +363,39 @@
    
         /* PAGINA DE CONTACTOS */
     .contenedor_gral {
-    grid-template-rows: 1fr  1 2fr 1fr;
-    grid-template-areas:
+    /* grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas: */
     /* 'header header header header' */
-    'main  main  main  main'
+    /* 'main  main  main  main'
     'mapa  mapa  mapa  mapa'
     'iframe iframe iframe iframe'
     'footer footer footer footer'
+    ; */
+
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'main'
+    'mapa'
+    'iframe'
+    'footer'
     ;
+
+    .iframe_mapa{
+      display: none;
+    }  
+
+    margin: 0;
+    padding: 0;
+        
     
     }
 
     form{
         margin: 0 auto;
         text-align: left;
+        
       }
     /* PAGINA DE productos */
     
