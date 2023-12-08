@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/estilos_grales.css">
     <link rel="stylesheet" href="CSS/grid.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <!-- <script src="../Home/backend/connection.py"></script> -->
 </head>
 <body>  
        
@@ -29,16 +30,15 @@
     <div class="contenedor_gral"> <!-- CONTENEDOR PRINCIPAL -->
     
         <div class="main">
-            <fieldset>
-
+            <fieldset width=30%>
                 <!-- INICIO DEL FORMULARIO -->
-                <form id="form_contacto">
+                <form id="contactForm" method="post">
                     <div class="formulario_Contacto"> 
                         <div class="label_nombre">
                             <label id="label_Nombre">Nombre:</label>
                         </div>
                         <div class="input_nombre">
-                            <input type="text" size="30" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" maxlength="30" required>
+                            <input type="text" size="30" name="nombre" id="nombre" placeholder="Ingrese su nombre" maxlength="30" required>
                         </div>
                         <br>
                         <div class="label_email">
@@ -59,13 +59,14 @@
                             <label for="Mensaje">Mensaje:</label>
                         </div>
                         <div class="input_mensaje">
-                            <textarea name="input_mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" maxlength="256" required></textarea>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje" maxlength="256" required></textarea>
                         </div>
                         <br>
                         <br>
-                        <input type="submit" id="Enviar"  value="Enviar" onclick="mostrarDatosContacto()"> <input type="reset" id="reset" value="Reset">
+                        <input type="submit" id="Enviar"  value="Enviar"> <input type="reset" id="reset" value="Reset">
                     </div> <!-- FIN CLASS FORMULARIO -->
-                </form> 
+                </form>
+                <div id="mensajeEnviado" style="display: none;" align="center">Datos enviados</div> 
             </fieldset>
         </div>
         <!-- ESTA SECCION SE LLAMA MAPA EN EL GRID -->
@@ -97,6 +98,7 @@
                 </td>
             </tr>
         </table>
+        
         </div>            
         <!-- ESTA SECCION SE LLAMA IFRAME EN EL GRID -->
         <div class="iframe_mapa">
@@ -122,6 +124,7 @@
                 </a>
              </div>
             </div>
+            
     </div>
 
 </body>
