@@ -1,5 +1,6 @@
 document.getElementById('btnTraerMensajes').addEventListener('click', () => {
-    fetch('http://127.0.0.1:5000/mensajes')
+    // fetch('http://127.0.0.1:5000/mensajes')
+    fetch('https://snicolazzi.pythonanywhere.com/mensajes')
       .then(response => response.json())
       .then(datos => {
         console.log("datos", datos)
@@ -36,7 +37,8 @@ document.getElementById('formularioContacto').addEventListener('submit', functio
     const formData = new FormData();
     formData.append('gestion', gestion); // Agregar el detalle a los datos del formulario
 
-    fetch(`http://127.0.0.1:5000/mensajes/${id}`, {
+    // fetch(`http://127.0.0.1:5000/mensajes/${id}`, {
+    fetch(`https://snicolazzi.pythonanywhere.com/mensajes/${id}`, {
       method: 'PUT',
       body: formData
     })

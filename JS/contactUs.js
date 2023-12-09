@@ -14,7 +14,8 @@ document.getElementById("links").innerHTML = `
         const formData = new FormData(document.getElementById('contactForm'));
     
         // Realizar el envío utilizando fetch
-        fetch('http://127.0.0.1:5000/mensajes', {
+        // fetch('http://127.0.0.1:5000/mensajes', {
+        fetch('https://snicolazzi.pythonanywhere.com/mensajes', {
         method: 'POST',
         body: formData
         })
