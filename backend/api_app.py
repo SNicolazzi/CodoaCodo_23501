@@ -1,4 +1,3 @@
-#--------------------------------------------------------------------
 # Instalar con pip install Flask
 from flask import Flask, request, jsonify
 #from flask import request
@@ -102,7 +101,8 @@ class Mensaje:
 
 
 # Creamos el objeto
-mensaje = Mensaje("127.0.0.1", "root", "", "clientes")
+# mensaje = Mensaje("127.0.0.1", "root", "", "clientes")
+mensaje = Mensaje("snicolazzi.mysql.pythonanywhere-services.com", "snicolazzi", "codoacodo", "snicolazzi$clientes")
 
 #--------------------------------------------------------------------
 @app.route("/mensajes", methods=["GET"])
@@ -126,7 +126,6 @@ def agregar_consulta():
     else:
         return jsonify({"mensaje": "No fue posible registrar el mensaje"}), 400
   
-
 #--------------------------------------------------------------------
 @app.route("/mensajes/<int:id>", methods=["PUT"])
 def responder_mensaje(id):
@@ -138,18 +137,6 @@ def responder_mensaje(id):
     else:
         return jsonify({"mensaje": "Mensaje no encontrado"}), 403
 
-
-
-# mensaje.enviar_mensaje("Matias", "123456789", "matiasseminara@gmail.com", "Esta consulta es para ver la conexion a la base de datos")
-# respuesta = mensaje.listar_mensajes()
-# print(mensaje.responder_mensaje(1, "Ya le contesté"))
-# print(mensaje.eliminar_mensaje(1))
-# print(mensaje.mostrar_mensaje(2))
-
-
 #--------------------------------------------------------------------
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
